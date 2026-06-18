@@ -2,7 +2,7 @@ const todoInput = document.getElementById("todoInput");
 const addBtn = document.getElementById("addBtn");
 const taskList = document.getElementById("taskList");
 
-addBtn.addEventListener("click", addTask);
+addBtn.addEventListener("click", () => addTask());
 
 function addTask() {
   const taskText = todoInput.value.trim();
